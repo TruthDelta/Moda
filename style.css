@@ -43,14 +43,21 @@ font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida San
 padding: 0vw 5vw 1vw 5vw;
 }
 
-#secao button {
+#bao {
     padding: 1vw;
     font-size: 30px;
     border-radius: 20px;
     border: solid black;
-    background-color: aquamarine;
+    background-color: rgba(127, 255, 212, 0.637);
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     margin: 2vw 0vw 4vw 0vw;
+}
+
+#bao:hover {
+    background-color: rgba(10, 56, 41, 0.637);
+color: white;
+box-shadow: 4px 5px 1px rgba(0, 0, 0, 0.671);
+transition: 0.7s
 }
 
 #roupas {
