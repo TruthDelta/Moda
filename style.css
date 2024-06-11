@@ -76,3 +76,37 @@ header a {
     border-radius: 20px;
     box-shadow: 4px 5px 1px rgba(0, 0, 0, 0.671);
 }
+
+#button {
+    margin-top: 10vw;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+#button button {
+    padding: 1vw;
+    font-size: 30px;
+    border-radius: 20px;
+    border: solid rgba(0, 0, 0, 0.568);
+    background-color: rgba(127, 255, 212, 0.637);
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    margin: 2vw 0vw 4vw 0vw;
+}
+
+#button button:hover {
+    background-color: rgba(10, 56, 41, 0.637);
+    color: white;
+    border: solid rgba(0, 0, 0, 0.527);
+    box-shadow: 4px 5px 1px rgba(0, 0, 0, 0.671);
+    transition: 0.7s
+}
+
+#button input {
+    padding: 1vw;
+    font-size: 30px;
+    border-radius: 20px;
+    border: solid rgba(0, 0, 0, 0.568);
+    background-color: rgba(127, 255, 212, 0.637);
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    margin: 2vw 0vw 4vw 0vw;
+}

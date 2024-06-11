@@ -6,28 +6,49 @@ function changeImage() {
     const currentSrc2 = img2.getAttribute("src");
     const currentSrc3 = img3.getAttribute("src");
 
-    if (currentSrc1 === 'imagens/roupa 1.png') { 
-        img1.setAttribute("src", "imagens/roupa 4.png"); 
+    if (currentSrc1 === 'imagens/roupa 1.png') {
+        img1.setAttribute("src", "imagens/roupa 4.png");
         img1.setAttribute("alt", "roupa4");
-    } else { 
+    } else {
         img1.setAttribute("src", "imagens/roupa 1.png");
         img1.setAttribute("alt", "roupa1");
     }
 
-    if (currentSrc2 === 'imagens/roupa 2.png') { 
-        img2.setAttribute("src", "imagens/roupa 5.png"); 
+    if (currentSrc2 === 'imagens/roupa 2.png') {
+        img2.setAttribute("src", "imagens/roupa 5.png");
         img2.setAttribute("alt", "roupa5");
-    } else { 
+    } else {
         img2.setAttribute("src", "imagens/roupa 2.png");
         img2.setAttribute("alt", "roupa2");
     }
 
-    if (currentSrc3 === 'imagens/roupa 3.png') { 
-        img3.setAttribute("src", "imagens/roupa 6.png"); 
+    if (currentSrc3 === 'imagens/roupa 3.png') {
+        img3.setAttribute("src", "imagens/roupa 6.png");
         img3.setAttribute("alt", "roupa6");
-    } else { 
+    } else {
         img3.setAttribute("src", "imagens/roupa 3.png");
         img3.setAttribute("alt", "roupa3");
     }
 }
 
+function changeType() {
+    const input = document.getElementsByTagName("input")[0];
+    const currentType = input.getAttribute("type");
+
+    switch (currentType) {
+        case 'text':
+            input.setAttribute('type', 'number');
+            break;
+
+        case 'number':
+            input.setAttribute('type', 'radio');
+            break;
+
+        case 'radio':
+            input.setAttribute('type', 'range');
+            break;
+
+        default:
+            input.setAttribute('type', 'type');
+    }
+}
